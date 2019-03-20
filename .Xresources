@@ -1,0 +1,96 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+XTerm*renderFont: true
+XTerm*faceName: xft:UbuntuMono Nerd Font
+XTerm*faceSize: 13
+XTerm*utf8: 2
+XTerm*locale: true
+
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+XTerm*loginshell: true
+
+! I like a LOT of scrollback...
+XTerm*savelines: 16384
+
+! double-click to select whole URLs :D
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+URxvt*termName: rxvt-unicode-256color
+Urxvt*buffered: true
+URxvt.font:xft:Monospace:pixelsize=15
+URxvt.intensityStyles: false
+URxvt.saveLines: 4000
+URxvt.scrollBar: false
+URxvt.cursorColor: white
+URxvt.geometry: 110x35
+
+!! Extensions
+URxvt.perl-ext-common: default,resize-font,url-select,keyboard-select,clipboard
+URxvt.colorUL: #4682B4
+!! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
+URxvt.url-select.underline: true
+!! resize-font
+URxvt.resize-font.smaller: C-j
+URxvt.resize-font.bigger:  C-k
+!! Matcher
+URxvt.url-launcher:	urxvt -e lynx -cfg=~/.lynx.cfg -lss=~/.lynx.lss
+URxvt.matcher.button: 1
+!! keyboard-select:
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+!!clipboard
+URxvt.keyboard-select.clipboard: true
+URxvt*depth: 32
+
+! special
+URxvt*foreground:   #c5c8c6
+URxvt*background:	[90]#1d1f21
+URxvt*cursorColor:  #c5c8c6
+
+XTerm*foreground: #c5c8c6
+XTerm*background: #1d1f21
+XTerm*cursorColor: #c5c8c6
+
+! black
+*.color0:       #1d1f21
+*.color8:       #969896
+
+! red
+*.color1:       #C03184
+*.color9:       #C03184
+
+! green
+*.color2:       #06DB59
+*.color10:      #06DB59
+
+! yellow
+*.color3:       #fba922
+*.color11:      #fba922
+
+! blue
+*.color4:       #3971ed
+*.color12:      #3971ed
+
+! magenta
+*.color5:       #8C3AC0
+*.color13:      #8C3AC0
+
+! cyan
+*.color6:       #3971ed
+*.color14:      #3971ed
+
+! white
+*.color7:       #c5c8c6
+*.color15:      #ffffff
