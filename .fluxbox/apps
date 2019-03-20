@@ -1,0 +1,5 @@
+[app] (name=geany) (class=Geany)
+[end]
+[app] (name=lxterminal) (class=Lxterminal)
+  [Workspace]	{0}
+[end]
